@@ -1,0 +1,37 @@
+{
+    "name": "maximaster/jaft",
+    "description": "league/fractal universal JSON:API transformer.",
+    "license": "MIT",
+    "require": {
+        "league/fractal": "^0.19.2",
+        "webmozart/assert": "^1.9.0"
+    },
+    "require-dev": {
+        "kahlan/kahlan": "^5.1",
+        "symfony/property-access": "^5.2",
+        "symfony/property-info": "^5.2",
+        "jawira/case-converter": "^3.4.0",
+        "phpdocumentor/reflection-docblock": "5.x-dev"
+    },
+    "suggest": {
+        "symfony/property-access": "For \\Maximaster\\Jaft\\DataExtractor\\PropertyAccessorDataExtractor",
+        "symfony/property-info": "For \\Maximaster\\Jaft\\SchemaRepository\\PropertyInfoSchemaRepository",
+        "jawira/case-converter": "For \\Maximaster\\Jaft\\CaseConverter\\JawiraCaseConverter",
+        "maximaster/atoa": "For \\Maximaster\\Jaft\\ObjectFormatter\\AtoaObjectFormatter"
+    },
+    "scripts": {
+        "test": "kahlan",
+        "check": "composer test"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maximaster\\Jaft\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Maximaster\\Jaft\\Spec\\Stub\\": "spec/Stub/"
+        }
+    },
+    "authors": [{"name": "Лавриненко Максим", "email": "maxim.lavrinenko@maximaster.ru"}]
+}
